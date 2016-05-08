@@ -47,7 +47,7 @@
     NSRange range = [startFilePath rangeOfString:self.startPage options:NSBackwardsSearch];
     NSString* docRoot = [startFilePath substringToIndex:range.location];
     self.docRoot = docRoot;
-
+    self.wwwFolderName = docRoot;
 
     self.alreadyLoaded = false;
   }
